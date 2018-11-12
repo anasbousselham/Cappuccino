@@ -1,0 +1,66 @@
+[GeneralSettings]
+MesVersion=2
+AppendMapFileToBinary=0
+HandleExceptions=0
+CheckForFrozenMainThread=0
+FreezeTimeout=60000
+ShowExceptionBox=1
+SuspendAllRunningThreads=0
+AutomaticallySaveBugReport=0
+AutomaticallyMailBugReport=1
+CopyBugReportToClipboard=0
+AutomaticallyContinueApplication=1
+AutomaticallyRestartApplication=0
+AutomaticallyCloseApplication=0
+MailAddress=bug-log@anasoft.ma
+MailSubject=bug report
+AttachBugReportFile=1
+DeleteBugReportFile=1
+ScreenShotDepth=0
+MailAsSmtpServer=0
+MailAsSmtpClient=1
+MailViaMapi=0
+MailViaMailto=0
+SmtpServer=bug-log@anasoft.ma
+SmtpPort=25
+SmtpAccount=bug-log@anasoft.ma
+SmtpPassword=Q8n778s9JI9/e9tURxn2dQ==
+MailSuccessMsg=The mail was sent successfully.
+MailFailureMsg=Sorry, sending the mail didn't work.
+BugReportFile=bugreport.txt
+AppendBugReports=1
+BugReportFileSize=50000
+VersionVariable=
+[ExceptionBox]
+TitleBar=%appname%
+ExceptionMessage=An error occurred in the application.
+FrozenMessage=The application seems to be frozen.
+ShowButtonMailBugReport=0
+ShowButtonSaveBugReport=0
+ShowButtonPrintBugReport=0
+ShowButtonShowBugReport=1
+ShowButtonContinueApplication=1
+ShowButtonRestartApplication=1
+ShowButtonCloseApplication=0
+MailBugReportText=mail bug report
+SaveBugReportText=save bug report
+PrintBugReportText=print bug report
+ShowBugReportText=show bug report
+ContinueApplicationText=continue application
+RestartApplicationText=restart application
+CloseApplicationText=close application
+FocusedButton=4
+AutomaticallyShowBugReport=0
+[BugReport]
+ListThreads=1
+ListModules=1
+ListHardware=1
+Disassembly=1
+HideUglyItems=0
+ShowRelativeAddrs=1
+ShowRelativeLines=1
+FormatDisassembly=0
+LimitDisassembly=5
+[UnitInitOrder]
+PatchUnitInitOrder=1
+UnitInitOrder=ShareMem, HPMM, MultiMM, nxllFastCpuDetect, nxllFastFillChar, nxllFastMove, nxllMemoryManagerImpl, nxllFastCpuDetect, nxllFastFillChar, nxllFastMove, nxllMemoryManagerImpl, nxllMemoryManager, nxReplacementMemoryManager

@@ -1,0 +1,1181 @@
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:50:07 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:50:07 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E761CD|kernel32.dll|                       |          |GetProcAddress  |    |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:50:07 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:50:20 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:50:07 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:50:21 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:50:07 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:50:21 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:38 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E761CD|kernel32.dll|                       |          |GetProcAddress  |    |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:40 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:41 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:41 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:42 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:43 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+EurekaLog 4.5.0
+
+Application:
+-------------------------------------------------------
+  1.1 Start Date      : Fri, 25 Jun 2004 19:53:38 +0000
+  1.2 Name/Description: Project1.exe
+  1.3 Version Number  : 
+  1.4 Parameters      : 
+
+Exception:
+-------------------------------------------------------------------------------------------------------
+  2.1 Date   : Fri, 25 Jun 2004 19:53:43 +0000
+  2.2 Address: 0044CF58
+  2.3 Module : Project1.exe
+  2.4 Type   : EAccessViolation
+  2.5 Message: Access violation at address 0044CF58 in module 'Project1.exe'. Read of address 0000004C.
+
+Active Controls:
+-----------------------------
+  3.1 Form Class   : TfrmMain
+  3.2 Form Text    : frmMain
+  3.3 Control Class: TEdit
+  3.4 Control Text : 
+
+Computer:
+----------------------------------
+  4.1 Name        : anasoft-evo
+  4.2 User        : Administrateur
+  4.3 Total Memory: 247 Mb
+  4.4 Free Memory : 47 Mb
+  4.5 Total Disk  : 9,71 Gb
+  4.6 Free Disk   : 2,72 Gb
+
+Operating System:
+--------------------------------------
+  5.1 Type    : Microsoft Windows 2000
+  5.2 Build # : 2195
+  5.3 Update  : Service Pack 4
+  5.4 Language: Français (France)
+
+Call Stack Information:
+--------------------------------------------------------------------------------
+|Address |Module      |Unit                   |Class     |Procedure/Method|Line|
+--------------------------------------------------------------------------------
+|004BC495|Project1.exe|System_Restrictions.pas|TTempTimer|KillMessage     |187 |
+|77E05F64|user32.dll  |                       |          |DispatchMessageA|    |
+|77E05F5E|user32.dll  |                       |          |DispatchMessageA|    |
+|004BEEF3|Project1.exe|Project1.dpr           |          |                |21  |
+--------------------------------------------------------------------------------
+
+Modules Information:
+---------------------------------------------------------------------------------------------------------------------------------------
+|Handle  |Name        |Description                                                   |Version      |Size   |Path                      |
+---------------------------------------------------------------------------------------------------------------------------------------
+|00400000|Project1.exe|                                                              |             |984064 |D:\projet\cappucino\Client|
+|68EA0000|PSAPI.DLL   |Process Status Helper                                         |5.0.2134.1   |28944  |C:\WINNT\system32         |
+|6BD00000|SYNCOR11.DLL|SynthCore R2.0 Midi Interface Driver                          |0.1.2.3      |40820  |C:\WINNT\system32         |
+|70A70000|SHLWAPI.DLL |Bibliothèque d'utilitaires légers du Shell                    |6.0.2800.1400|395776 |C:\WINNT\system32         |
+|71710000|comctl32.dll|Common Controls Library                                       |5.81.4916.400|529680 |C:\WINNT\system32         |
+|74F50000|msafd.dll   |Microsoft Windows Sockets 2.0 Service Provider                |5.0.2195.6602|108816 |C:\WINNT\system32         |
+|74F90000|wshtcpip.dll|Windows Sockets Helper DLL                                    |5.0.2195.6601|17680  |C:\WINNT\System32         |
+|74FA0000|WS2HELP.DLL |Application d'assistance de Windows Socket 2.0 pour Windows NT|5.0.2134.1   |18192  |C:\WINNT\system32         |
+|74FB0000|WS2_32.DLL  |Windows Socket 2.0 32-Bit DLL                                 |5.0.2195.6601|69904  |C:\WINNT\system32         |
+|74FD0000|wsock32.dll |DLL Socket 32-bits Windows                                    |5.0.2195.6603|24336  |C:\WINNT\system32         |
+|75950000|LZ32.DLL    |LZ Expand/Compress API DLL                                    |5.0.2195.6611|10000  |C:\WINNT\system32         |
+|770C0000|RPCRT4.DLL  |Remote Procedure Call Runtime                                 |5.0.2195.6904|449808 |C:\WINNT\system32         |
+|77540000|winmm.dll   |MCI API DLL                                                   |5.0.2161.1   |193808 |C:\WINNT\system32         |
+|77580000|shell32.dll |DLL commune du shell Windows                                  |5.0.3700.6705|2414352|C:\WINNT\system32         |
+|77810000|version.dll |Version Checking and File Installation Libraries              |5.0.2195.6623|16144  |C:\WINNT\system32         |
+|779A0000|oleaut32.dll|                                                              |2.40.4522.0  |626960 |C:\WINNT\system32         |
+|77A40000|ole32.dll   |Microsoft OLE pour Windows                                    |5.0.2195.6906|954640 |C:\WINNT\system32         |
+|77E00000|user32.dll  |DLL client de l'API Utilisateur de Windows 2000               |5.0.2195.6897|403728 |C:\WINNT\system32         |
+|77E70000|kernel32.dll|DLL du client API BASE Windows NT                             |5.0.2195.6897|789264 |C:\WINNT\system32         |
+|77F40000|GDI32.DLL   |GDI Client DLL                                                |5.0.2195.6898|242448 |C:\WINNT\system32         |
+|78000000|MSVCRT.DLL  |Microsoft (R) C Runtime Library                               |6.1.9844.0   |286773 |C:\WINNT\system32         |
+|78460000|ntdll.dll   |DLL Couche NT                                                 |5.0.2195.6899|519440 |C:\WINNT\system32         |
+|78ED0000|advapi32.dll|API avancées Windows 32                                       |5.0.2195.6876|388368 |C:\WINNT\system32         |
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Registers:
+-----------------------------
+EAX: 0000000C   EDI: 0012FF5C
+EBX: 00D31CFC   ESI: 0044CF90
+ECX: 00010101   ESP: 0012FE3C
+EDX: 00000000   EIP: 0044CF58
+
+Stack:               Memory Dump:
+------------------   ---------------------------------------------------------------------------
+0012FE3C: 004BC49A   0044CF58: 3A 50 40 74 08 88 50 40 E8 67 FF FF FF C3 8B C0  :P@t..P@.g......
+0012FE40: 00D31D08   0044CF68: 3B 50 30 74 08 89 50 30 E8 57 FF FF FF C3 8B C0  ;P0t..P0.W......
+0012FE44: 0044CFA2   0044CF78: 55 8B EC 8B 55 08 89 50 38 8B 55 0C 89 50 3C E8  U...U..P8.U..P<.
+0012FE48: 0012FE74   0044CF88: 40 FF FF FF 5D C2 08 00 53 66 83 78 3A 00 74 0A  @...]...Sf.x:.t.
+0012FE4C: 0044CE88   0044CF98: 8B D8 8B D0 8B 43 3C FF 53 38 5B C3 68 46 4C 00  .....C<.S8[.hFL.
+0012FE50: 0012FF20   0044CFA8: 2D FF 00 00 68 46 4C 00 2E FF 00 00 68 46 4C 00  -...hFL.....hFL.
+0012FE54: 00403EDC   0044CFB8: 2F FF 00 00 68 46 4C 00 10 FF 00 00 68 46 4C 00  /...hFL.....hFL.
+0012FE58: 0012FE6C   0044CFC8: 11 FF 00 00 68 46 4C 00 12 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE5C: 0012FF5C   0044CFD8: 13 FF 00 00 68 46 4C 00 14 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE60: 0012FF64   0044CFE8: 15 FF 00 00 68 46 4C 00 16 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE64: C0000000   0044CFF8: 17 FF 00 00 68 46 4C 00 18 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE68: 00D31D08   0044D008: 19 FF 00 00 68 46 4C 00 1A FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE6C: 0012FE84   0044D018: 1B FF 00 00 68 46 4C 00 1C FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE70: 0042087E   0044D028: 1D FF 00 00 68 46 4C 00 1E FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE74: 00000113   0044D038: 1F FF 00 00 68 46 4C 00 00 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+0012FE78: 00000001   0044D048: 01 FF 00 00 68 46 4C 00 02 FF 00 00 68 46 4C 00  ....hFL.....hFL.
+
+
+
+
+
